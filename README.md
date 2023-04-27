@@ -67,7 +67,7 @@ Uncommenting the code means ACKs will be skipped every 5th packet and you can se
 
 **Checking Integrity of Files after Transmission-**
 
-Want to know if your tranmissions are corrupting the files? 
+Want to know if your transmissions are corrupting the files? 
 
 After the transmission tasks are completed, use Linux command
 
