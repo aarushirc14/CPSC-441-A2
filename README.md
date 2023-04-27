@@ -10,30 +10,30 @@ Split your terminal. Run server on one side, client on the other.
 
 Server:
 
-cd server
+    cd server
 
-make
+    make
 
-./server \[PORT NUMBER]
+    ./server [PORT NUMBER]
 
 Note: use some port number not in use like 8000
 
 
 Client:
 
-cd server
+    cd server
 
-make
+    make
 
-./client \[IP ADDRESS] \[PORT]
+    ./client [IP ADDRESS] [PORT]
 
 2 user options:
 
-upload \[FILENAME]
+    upload [FILENAME]
 
 or
 
-download \[FILENAME]
+    download [FILENAME]
 
 **Notes-**
 
@@ -47,7 +47,7 @@ If you try to upload or download files that already exist in the client or serve
 
 First generate a large file in either client or server directory like
 
- truncate -s 200M largefile.bin
+    truncate -s 200M largefile.bin
 
 Then upload/download largefile.bin
 
@@ -64,8 +64,11 @@ Uncommenting the code means ACKs will be skipped every 5th packet and you can se
 **Checking Integrity of Files after Transmission-**
 
 Want to know if your tranmissions are corrupting the files? 
+
 After the transmission tasks are completed, use Linux command
-    shasum [file-name] 
+
+    shasum [FILENAME] 
+    
 to compute the SHA-1 digest of all files in both client’s directory and server’s directory to check integrity. The shasum value of the original file should match the transmitted one.
 
 
