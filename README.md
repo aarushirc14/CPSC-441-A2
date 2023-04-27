@@ -38,7 +38,11 @@ or
 **Notes-**
 
 Use the same port number as server.
-To find your IP address use the "ifconfig" Linux command and use the number with the “inet” tag (Internet Protocol (IP) v4 Addresses). 
+To find your IP address use the Linux command:
+
+    ifconfig  
+    
+ and use the number with the “inet” tag (Internet Protocol (IP) v4 Addresses). 
 
 If you try to upload or download files that already exist in the client or server directory then the program will give an error.
 
@@ -51,7 +55,7 @@ First generate a large file in either client or server directory like
 
 Then upload/download largefile.bin
 
-While the file transmission is happening kill the receiver. The sender will try retransmit 5 times and then a timeout will happen.
+While the file transmission is happening kill the receiver. The sender will try to retransmit 5 times and then a timeout will happen.
 
 
 **To Test Retransmission-**
