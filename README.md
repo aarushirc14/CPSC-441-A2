@@ -21,7 +21,7 @@ Note: use some port number not in use like 8000
 
 Client:
 
-    cd server
+    cd client
 
     make
 
